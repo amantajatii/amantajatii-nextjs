@@ -27,14 +27,14 @@ export default function RootLayout({ children }) {
           glowIntensity={0.3}
           saturation={0}
           hueShift={140}
-          className="fixed inset-0 opacity-90"
+          className="fixed inset-0 -z-50 w-full h-full opacity-80"
         />
 
         {/* NAVBAR: tetap di atas saat scroll */}
         <NavBar className="fixed top-0 left-0 w-full z-[9999]" />
 
         {/* KONTEN: beri jarak setinggi navbar (h-16 = 64px → pt-16) */}
-        <main className="pt-28">{children}</main>
+        <main className="relative z-10">{children}</main>
       </body>
     </html>
   );
