@@ -19,16 +19,6 @@ export default function RootLayout({ children }) {
     <html lang="id">
       <body
         className={`${poppins.className} relative min-h-[100svh] bg-black text-white`}>
-        {/* BACKGROUND: menempel layar penuh, selalu di belakang */}
-        <Galaxy
-          mouseRepulsion
-          mouseInteraction
-          density={1}
-          glowIntensity={0.3}
-          saturation={0}
-          hueShift={140}
-          className="fixed inset-0 -z-50 w-full h-full opacity-80"
-        />
 
         {/* NAVBAR: tetap di atas saat scroll */}
         <NavBar className="fixed top-0 left-0 w-full z-[9999]" />
